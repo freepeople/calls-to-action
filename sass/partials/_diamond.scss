@@ -1,0 +1,40 @@
+@import
+  "../modules/settings",
+  "base",
+  "compass/css3";
+
+.cta_diamond {
+  @extend .cta;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-bottom-color: $btn-bg-color;
+  background-color: transparent;
+  position: relative;
+  top: -100px;
+  @include transition(none);
+  span {
+    display: block;
+    position: absolute;
+    top: 75px;
+    left: -20px;
+    z-index: 2;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: -100px;
+    top: 100px;
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-color: $btn-bg-color;
+  }
+  &:hover {
+    background-color: transparent;
+    border-bottom-color: darken($btn-bg-color, 10%);
+    &:after {
+      border-top-color: darken($btn-bg-color, 10%);
+    }
+  }
+}

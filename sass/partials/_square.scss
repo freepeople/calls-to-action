@@ -1,0 +1,22 @@
+@import
+  "../modules/settings",
+  "base";
+
+.cta_square {
+  @extend .cta;
+  width: 126px;
+  height: 126px;
+}
+
+.cta_square-art {
+  position: relative;
+  background: url($btn-bg-img);
+  padding: 1px;
+  .cta_square {
+    background-image: linear-gradient(darken($btn-bg-color, 10%), lighten($btn-bg-color, 5%));
+    border: solid 2px #fff;
+    &:hover {
+      background-image: linear-gradient(darken($btn-bg-color, 10%), lighten($btn-bg-color, 10%));
+    }
+  }
+}

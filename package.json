@@ -1,0 +1,11 @@
+{
+    "name": "CTAs",
+    "title": "Grunt task to build and watch SCSS files",
+    "version": "0.0.1",
+    "devDependencies": {
+        "matchdep": "0.3.0",
+        "grunt": "0.4.1",
+        "grunt-contrib-compass": "^0.8.0",
+        "grunt-contrib-watch": "0.5.3"
+    }
+}

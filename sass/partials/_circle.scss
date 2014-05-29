@@ -1,0 +1,25 @@
+@import
+  "../modules/settings",
+  "base",
+  "compass/css3";
+
+.cta_circle {
+  @include border-radius(50%);
+  @extend .cta;
+  width: 126px;
+  height: 126px;
+}
+
+.cta_circle-art {
+  @include border-radius(50%);
+  position: relative;
+  background: url($btn-bg-img);
+  padding: 1px;
+  .cta_circle {
+    background-image: radial-gradient(lighten($btn-bg-color, 10%), darken($btn-bg-color, 5%));
+    border: solid 2px #fff;
+    &:hover {
+      background-image: radial-gradient(lighten($btn-bg-color, 10%), darken($btn-bg-color, 10%));
+    }
+  }
+}

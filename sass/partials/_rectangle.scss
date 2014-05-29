@@ -1,0 +1,68 @@
+@import
+  "../modules/settings",
+  "base";
+
+.cta_rect {
+  @extend .cta;
+  width: 252px;
+  height: 30px;
+  font-size: .8rem;
+  line-height: 200%;
+  text-transform: uppercase;
+}
+
+.cta_rect-art {
+  position: relative;
+  background: url($btn-bg-img);
+  padding: 1px;
+  .cta_rect {
+    background-image: linear-gradient(darken($btn-bg-color, 10%), lighten($btn-bg-color, 5%));
+    border: solid 2px #fff;
+    &:hover {
+      background-image: linear-gradient(darken($btn-bg-color, 10%), lighten($btn-bg-color, 10%));
+    }
+  }
+}
+
+.cta_rect-art2 {
+  position: relative;
+  height: 30px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-image: url($rect-left-img);
+    width: 82px;
+    height: 100%;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    background-image: url($rect-right-img);
+    width: 83px;
+    height: 100%;
+  }
+  .cta_rect {
+    width: 150px;
+    background: #0a0a0a;
+    color: #ddd;
+    &:hover {
+      color: #fff;
+    }
+    span {
+      display: inline-block;
+      width: 100px;
+      position: absolute;
+      top: 2px;
+      left: 24px;
+      z-index: 2;
+    }
+  }
+}
