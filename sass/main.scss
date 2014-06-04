@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  padding: 2rem 0;
+  padding: 2em 0;
   &:after {
     content: '';
     display: table;
@@ -22,20 +22,20 @@ section {
 }
 
 .max-width {
-  max-width: 45rem;
   width: 100%;
-  min-width: 10rem;
+  min-width: 10em;
+  max-width: 45em;
 }
 
 .header {
   width: 100%;
   background: #eb5191;
-  padding: 1rem 0;
+  padding: 1em 0;
   h1 {
     @extend .max-width;
     color: #fff;
     font: {
-      size: 1.25rem;
+      size: 1.25em;
       style: italic;
       weight: 400;
       family: $btn-font-family;
@@ -48,15 +48,15 @@ section {
 
 .shell {
   @include border-radius();
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1em 1em 1em;
   background: #fff;
   @extend .max-width;
-  margin: 2rem auto;
+  margin: 2em auto;
 }
 
 .shape {
   clear: both;
-  margin: 2rem auto 3rem auto;
+  margin: 2em auto 3em auto;
   .shape--title {
     font: {
       family: $btn-font-family;
@@ -67,11 +67,11 @@ section {
     line-height: 150%;
     span {
       display: inline-block;
-      padding-left: 1rem;
+      padding-left: 1em;
     }
   }
   .shape--example {
-    margin: 1rem;
+    margin: 1em;
     float: left;
   }
   &:after {
@@ -82,5 +82,5 @@ section {
 
 .clear {
   clear: both;
-  padding-bottom: 2rem;
+  padding-bottom: 2em;
 }
