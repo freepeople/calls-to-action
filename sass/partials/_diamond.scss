@@ -38,3 +38,63 @@
     }
   }
 }
+
+// only supported in IE9+, Chrome 12+, FF 16+, Safari 3+, Opera 15+
+.cta_diamond-html5 {
+  @extend .cta;
+  margin: 45px 0 0 25px;
+  @include rotate(-45deg);
+  height: 125px;
+  width: 125px;
+  border: solid 1px darken($btn-bg-color, 30%);
+  background-color: $btn-bg-color;
+  span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 125px;
+    z-index: 2;
+    @include rotate(45deg);
+  }
+  &:hover {
+    background-color: darken($btn-bg-color, 10%);
+  }
+}
+
+.cta_diamond-bg {
+  @extend .cta;
+  position: relative;
+  background: {
+    color: transparent;
+    image: url(//static.fpassets.com/content/gateways/2014/06-jun/acc/images/23/Diamond-Button-Background.png);
+    repeat: no-repeat;
+    position: top left;
+  }
+  width: 210px;
+  height: 162px;
+  @include transition(none);
+  span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 162px;
+    z-index: 2;
+    color: $btn-bg-color;
+  }
+  &:hover {
+    background: {
+      color: transparent;
+      image: url(//static.fpassets.com/content/gateways/2014/06-jun/acc/images/23/Diamond-Button-Background.png);
+      repeat: no-repeat;
+      position: bottom left;
+    }
+  }
+}
