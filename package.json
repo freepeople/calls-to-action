@@ -1,11 +1,9 @@
 {
-    "name": "CTAs",
-    "title": "Grunt task to build and watch SCSS files",
-    "version": "0.0.1",
-    "devDependencies": {
-        "matchdep": "0.3.0",
-        "grunt": "0.4.1",
-        "grunt-contrib-compass": "^0.8.0",
-        "grunt-contrib-watch": "0.5.3"
-    }
+  "name": "CTAs",
+  "title": "Gulp tasks to build and watch SCSS files",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "^3.8.2",
+    "gulp-compass": "^1.1.9"
+  }
 }
