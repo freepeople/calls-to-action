@@ -1,6 +1,5 @@
-@import
-  "../modules/settings",
-  "base";
+@import "../modules/settings";
+@import "base";
 
 .cta_square {
   @extend .cta;

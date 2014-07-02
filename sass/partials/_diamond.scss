@@ -1,7 +1,6 @@
-@import
-  "../modules/settings",
-  "base",
-  "compass/css3";
+@import "../modules/settings";
+@import "base";
+@import "compass/css3";
 
 .cta_diamond {
   @extend .cta;
