@@ -1,7 +1,6 @@
-@import
-  "../modules/settings",
-  "../modules/mixins",
-  "compass/css3";
+@import "../modules/settings";
+@import "../modules/mixins";
+@import "compass/css3";
 
 @include exports("cta") {
   .cta {
@@ -11,9 +10,10 @@
     color: $btn-color;
     font: {
       family: $btn-font-family;
-      size: 1.2rem;
+      size: 16px;
       weight: 600;
     }
+    line-height: 150%;
     text: {
       align: center;
       decoration: none;

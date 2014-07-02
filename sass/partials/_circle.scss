@@ -1,7 +1,6 @@
-@import
-  "../modules/settings",
-  "base",
-  "compass/css3";
+@import "../modules/settings";
+@import "base";
+@import "compass/css3";
 
 .cta_circle {
   @include border-radius(50%);
@@ -10,7 +9,7 @@
   height: 126px;
 }
 
-.cta_circle-art {
+.cta_circle-art-border {
   @include border-radius(50%);
   position: relative;
   background: url($btn-bg-img);
@@ -22,4 +21,41 @@
       background-image: radial-gradient(lighten($btn-bg-color, 10%), darken($btn-bg-color, 10%));
     }
   }
+}
+
+.cta_circle-art-bg {
+  position: relative;
+  width: 135px;
+  height: 135px;
+  line-height: 170%;
+  span {
+    display: inline-block;
+    width: 100px;
+    margin: 30% auto;
+    font-weight: 300;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  &:before {
+    display: none;
+  }
+  &:hover > span {
+    text-decoration: underline;
+  }
+}
+
+.cta_circle-art-bg-light {
+  @extend .cta_circle-art-bg;
+  background: transparent url($circle-bg-light);
+  color: #373737;
+}
+
+.cta_circle-art-bg-dark {
+  @extend .cta_circle-art-bg;
+  background: transparent url($circle-bg-dark);
+  color: #fff;
 }
